@@ -1,0 +1,31 @@
+{
+  "name": "compose-healthcheck-lint",
+  "version": "1.0.0",
+  "description": "CLI that scans a docker-compose file and reports which services have no healthcheck, and which depends_on entries don't actually wait for health.",
+  "main": "bin/cli.js",
+  "bin": {
+    "compose-healthcheck-lint": "bin/cli.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "keywords": [
+    "docker",
+    "docker-compose",
+    "healthcheck",
+    "lint",
+    "devops",
+    "ci"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^5.4.2"
+  }
+}
